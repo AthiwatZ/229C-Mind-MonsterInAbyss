@@ -7,7 +7,22 @@ public class WeaponSelectMenu : MonoBehaviour
 {
     public void SelectWeapon(string weaponName)
     {
-        WeaponSelector.selectedWeaponName = weaponName;
-        SceneManager.LoadScene("VsBoss"); // เปลี่ยนชื่อซีนตามของคุณ
+        switch (weaponName)
+        {
+            case "Gun":
+                WeaponSelector.selectedWeapon = WeaponType.Gun;
+                break;
+            case "Rocket":
+                WeaponSelector.selectedWeapon = WeaponType.Rocket;
+                break;
+            case "Bow":
+                WeaponSelector.selectedWeapon = WeaponType.Bow;
+                break;
+            default:
+                WeaponSelector.selectedWeapon = WeaponType.Gun;
+                break;
+        }
+
+        SceneManager.LoadScene("VsBoss"); // ใส่ชื่อซีนที่ใช้จริง
     }
 }

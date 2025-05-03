@@ -4,25 +4,33 @@ using UnityEngine;
 
 public class PlayerWeaponLoader : MonoBehaviour
 {
-    public GameObject bowPrefab;
+
     public GameObject gunPrefab;
     public GameObject rocketPrefab;
-    public Transform weaponHolder; // จุดติดอาวุธ (เช่นมือ)
+    public GameObject bowPrefab;
+
+    public Transform weaponHolder; // จุดติดอาวุธกับตัวละคร
+
+    private WeaponType currentWeapon;
 
     void Start()
     {
+        currentWeapon = WeaponSelector.selectedWeapon;
         GameObject weaponToSpawn = null;
 
-        switch (WeaponSelector.selectedWeaponName)
+        // ตรวจดูว่าเลือกอาวุธแบบไหนจาก WeaponSelector
+        switch (WeaponSelector.selectedWeapon)
         {
-            case "Bow":
-                weaponToSpawn = bowPrefab;
-                break;
-            case "Sword":
+            case WeaponType.Gun:
                 weaponToSpawn = gunPrefab;
                 break;
-            case "Rocket":
+
+            case WeaponType.Rocket:
                 weaponToSpawn = rocketPrefab;
+                break;
+
+            case WeaponType.Bow:
+                weaponToSpawn = bowPrefab;
                 break;
         }
 
@@ -32,7 +40,10 @@ public class PlayerWeaponLoader : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("ไม่มีอาวุธที่เลือกหรือยังไม่ได้ตั้ง WeaponHolder");
+            Debug.LogWarning("Weapon prefab หรือ weaponHolder ไม่ถูกตั้งค่า");
         }
+
+        currentWeapon = WeaponSelector.selectedWeapon;
+
     }
 }
