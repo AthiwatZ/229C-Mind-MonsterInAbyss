@@ -678,7 +678,7 @@ ConstantForce2D:
   m_GameObject: {fileID: 123107248}
   m_Enabled: 1
   m_Force: {x: 0, y: 0}
-  m_RelativeForce: {x: 0, y: 0}
+  m_RelativeForce: {x: 0.2, y: 0}
   m_Torque: 0
 --- !u!50 &123107254
 Rigidbody2D:
