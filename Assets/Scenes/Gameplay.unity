@@ -287,8 +287,8 @@ ConstantForce2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39165398}
   m_Enabled: 1
-  m_Force: {x: 0.5, y: 0}
-  m_RelativeForce: {x: 0, y: 0}
+  m_Force: {x: 0, y: 0}
+  m_RelativeForce: {x: 0.5, y: 0}
   m_Torque: 0
 --- !u!50 &39165400
 Rigidbody2D:
@@ -4804,7 +4804,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6929924221510541977, guid: 19e07f9d107e445408633f50457d456e,
     type: 3}
   m_Color: {r: 1, g: 0.94256496, b: 0.43867922, a: 1}
