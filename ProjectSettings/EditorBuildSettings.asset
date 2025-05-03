@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RestartScene.unity
     guid: 6c3eea26247fe034292b97139b13d843
+  - enabled: 1
+    path: Assets/Scenes/End Credit.unity
+    guid: fc63e1343c58cfa4eb1499f9e6823b88
   m_configObjects: {}
