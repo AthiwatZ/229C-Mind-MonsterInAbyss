@@ -14,7 +14,11 @@ public class BossHealth : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        UpdateHealthBar();
+        if (healthBar != null)
+        {
+            healthBar.maxValue = maxHealth; // << �Ӥѭ
+            healthBar.value = currentHealth;
+        }
     }
 
     public void TakeDamage(float amount)
