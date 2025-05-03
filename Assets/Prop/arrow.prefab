@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8844358415718904428}
   - component: {fileID: 2537576677301038782}
   - component: {fileID: 3923659169777216741}
+  - component: {fileID: -2178027513225320237}
   m_Layer: 0
   m_Name: arrow
   m_TagString: Untagged
@@ -302,3 +303,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponType: 1
+--- !u!114 &-2178027513225320237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944615593344035573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac5483d7f510c54199474abb6228ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newRotationEuler: {x: 0, y: 0, z: -80}
+  newScale: {x: -0.1, y: -0.1, z: -0.1}

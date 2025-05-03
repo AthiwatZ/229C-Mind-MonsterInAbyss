@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4042055683451463429}
   - component: {fileID: 1096978070338036235}
   - component: {fileID: 1394322683919340671}
+  - component: {fileID: -536874160361567816}
   m_Layer: 0
   m_Name: water_gun__41360cbd
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4757903314645012092}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.25626642, y: 0.96484774, z: 0.056325566, w: 0.014960236}
+  m_LocalRotation: {x: -0.08418742, y: 0.9947443, z: 0.052856255, w: 0.024547908}
   m_LocalPosition: {x: 5.6, y: -1.6, z: 0}
   m_LocalScale: {x: 0.38529468, y: 0.38529468, z: 0.38529468}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -6.682, y: 180, z: -29.749}
+  m_LocalEulerAnglesHint: {x: -6.274, y: 177.697, z: -9.549}
 --- !u!212 &1096978070338036235
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -219,3 +220,18 @@ PolygonCollider2D:
       - {x: -0.77, y: -1.8199999}
       - {x: -0.55, y: -1.7099999}
   m_UseDelaunayMesh: 0
+--- !u!114 &-536874160361567816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4757903314645012092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff0be22fa9b211e4ba2562ce24202806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newRotationEuler: {x: 0, y: 180, z: 0}
+  newScale: {x: 1, y: 1, z: 1}
+  newPosition: {x: -1.1, y: 1.1, z: 0}
