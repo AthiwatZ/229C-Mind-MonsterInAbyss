@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChooseWeaponScene.unity
     guid: ea16aa487438cae499875897e99075c4
+  - enabled: 1
+    path: Assets/Scenes/VsBoss.unity
+    guid: 15d4397ad800be84994692d43bef8253
   m_configObjects: {}
