@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - Boss
+  - Next
+  - Next1
+  - Next2
   layers:
   - Default
   - TransparentFX
