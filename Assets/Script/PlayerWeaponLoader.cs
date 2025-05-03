@@ -11,11 +11,9 @@ public class PlayerWeaponLoader : MonoBehaviour
 
     public Transform weaponHolder; // จุดติดอาวุธกับตัวละคร
 
-    private WeaponType currentWeapon;
-
-    void Start()
+    void Awake()
     {
-        currentWeapon = WeaponSelector.selectedWeapon;
+
         GameObject weaponToSpawn = null;
 
         // ตรวจดูว่าเลือกอาวุธแบบไหนจาก WeaponSelector
@@ -42,8 +40,5 @@ public class PlayerWeaponLoader : MonoBehaviour
         {
             Debug.LogWarning("Weapon prefab หรือ weaponHolder ไม่ถูกตั้งค่า");
         }
-
-        currentWeapon = WeaponSelector.selectedWeapon;
-
     }
 }

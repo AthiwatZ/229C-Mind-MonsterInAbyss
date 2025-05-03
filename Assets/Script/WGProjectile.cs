@@ -10,7 +10,7 @@ public class WGProjectile : MonoBehaviour
     public Rigidbody2D rocketBulletPrefab;
     public Rigidbody2D arrowBulletPrefab;
 
-    public WeaponType currentWeapon = WeaponType.Gun;
+    public WeaponType currentWeapon => WeaponSelector.selectedWeapon;
 
     // Update is called once per frame
     void Update()
